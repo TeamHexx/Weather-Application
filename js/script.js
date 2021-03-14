@@ -28,10 +28,10 @@ function handleGetData(event) {
 }
 function render(data) {
     // Data.forEach()
-	$city.text("Weather for: " + data.name);	
-    $temp.text(data.main.temp + " degrees");
-	$feels_like.text(data.main.feels_like) + " degrees";
-    $weather.text(data.weather[0].description);
+	$city.text("The Weather for " + data.name + " today!");	
+    $temp.text("Today's tempature is " + data.main.temp + " degrees Farenheit,");
+	$feels_like.text("Although it feels like " + data.main.feels_like + " degrees Farenheit.");
+    $weather.text("You can expect " + data.weather[0].description + "!");
 }
 
 
